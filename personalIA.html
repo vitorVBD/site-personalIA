@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="container-fluid bg-dark text-bg-dark p-2">
+        <div class="fixed-top bg-dark">
+            <li class="nav-item dropdown list-unstyled p-2">
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Menu</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a class="nav-link active" href="#introducao">Introdução</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a class="nav-link active" href="#biotipos">Biotipos Corporais</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a class="nav-link active" href="#dias">Dias Disponíveis para Treino</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a class="nav-link active" href="#tipos">Tipos de Exercícios</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a class="nav-link active" href="#regras">Regras de negócio</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a class="nav-link active" href="#material">Material de Apoio</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a class="nav-link active" href="#prompt">Prompt de Resposta Proposto</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a class="nav-link active" href="#topo">Voltar ao topo</a>
+                    </li>
+                </ul>
+        </div>
+        </div>
+        </div>
+        </nav>
+
+        <h1 class="mt-5 text-center" id="topo">Personal Trainer IA</h1>
+
+    </header>
+
+    <section class="container-fluid bg-light text-center p-3 border-bottom border-black border-4" id="introducao">
+        <h3>📝 Introdução</h3>
+
+        <p>Este projeto visa criar um assistente de personal trainer automatizado que ajuda a gerar treinos
+            personalizados. O usuário fornecerá informações como o biotipo corporal, a quantidade de dias disponíveis
+            para treinar na semana e o tipo de exercício preferido, e o assistente gerará um plano de treino ideal com
+            base nessas informações.</p>
+
+    </section>
+
+    <section class="container-fluid bg-light text-center p-3 mt-2 border-bottom border-black border-4" id="biotipos">
+        <h3>💪 Biotipos Corporais</h3>
+
+        <p>A primeira regra para personalizar o treino é determinar o biotipo corporal do usuário. Existem três biotipos
+            principais:</p>
+
+        <table class="container-fluid table-bordered table-responsive w-50">
+
+            <thead class="bg-dark text-bg-dark">
+                <tr>
+                    <th>Imagem</th>
+
+                    <th>Biotipo</th>
+
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><img class="text-center img-fluid w-50" src="Imagens/ectomorph.jpg" alt="Corpo ectomorfo"></td>
+
+                    <td>Ectomorfo</td>
+
+                    <td>Corpo mais magro, difícil ganhar peso e massa muscular.</td>
+                </tr>
+
+                <tr>
+                    <td><img class="text-center img-fluid w-50" src="Imagens/mesomorph.jpg" alt="Corpo mesomorfo"></td>
+
+                    <td>Mesomorfo</td>
+
+                    <td>Corpo naturalmente musculoso, facilidade para ganhar massa muscular e perder gordura.</td>
+                </tr>
+
+                <tr>
+                    <td><img class="text-center img-fluid w-50" src="Imagens/endmorph.jpg" alt="Corpo endomorfo"></td>
+
+                    <td>Endomorfo</td>
+
+                    <td>Corpo com tendência a acumular gordura, maior dificuldade em perder peso.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="text-muted text-center mt-2">Nota: Escolha o biotipo que mais se aproxima do seu corpo atual para que
+            o treino seja mais eficiente.</p>
+    </section>
+
+    <section class="text-center bg-light mt-2 p-3 border-bottom border-black border-4" id="dias">
+        <h3>📅 Dias e Horas Disponíveis para Treino</h3>
+
+        <p>A segunda e terceira regra é determinar quantos dias por semana e quantas horas por dia o usuário tem
+            disponível para treinar. Dependendo do número de dias, o treino sugerido pode variar:</p>
+
+        <table class="container-fluid table-bordered table-responsive w-50">
+
+            <thead class="bg-dark text-bg-dark">
+                <tr>
+                    <th>Imagem</th>
+
+                    <th>Dias por Semana</th>
+
+                    <th>Tipo de Treino Sugerido</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><img class="text-center img-fluid w-25" src="Imagens/calendar.png" alt="Calendario"></td>
+
+                    <td>1 dia</td>
+
+                    <td>Treino Full Body</td>
+                </tr>
+
+                <tr>
+                    <td><img class="text-center img-fluid w-25" src="Imagens/calendar.png" alt="Calendario"></td>
+
+                    <td>2 dias</td>
+
+                    <td>Treino AB</td>
+                </tr>
+
+                <tr>
+                    <td><img class="text-center img-fluid w-25" src="Imagens/calendar.png" alt="Calendario"></td>
+
+                    <td>3 dias</td>
+
+                    <td>Treino ABC</td>
+                </tr>
+
+                <tr>
+                    <td><img class="text-center img-fluid w-25" src="Imagens/calendar.png" alt="Calendario"></td>
+
+                    <td>4 dias</td>
+
+                    <td>Treino ABCD</td>
+                </tr>
+
+                <tr>
+                    <td><img class="text-center img-fluid w-25" src="Imagens/calendar.png" alt="Calendario"></td>
+
+                    <td>5 dias</td>
+
+                    <td>Treino ABCDE</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+        <ul class="list-unstyled">
+            <li>Full Body: Treino que trabalha o corpo todo em uma única sessão.</li>
+            <li>AB: Divisão do treino em dois dias, cada um focado em grupos musculares diferentes.</li>
+            <li>ABC: Divisão do treino em três dias, cada um focado em grupos musculares diferentes.</li>
+            <li>ABCDE: Divisão do treino em quatro dias, com foco específico em cada grupo muscular.</li>
+            <li>ABCDE: Divisão do treino em cinco dias, com foco ainda mais específico em cada grupo muscular.
+            </li>
+        </ul>
+        </p>
+
+    </section>
+
+    <section class="text-center bg-light mt-2 p-3 border-bottom border-black border-4" id="tipos">
+        <h3>🏋️ Tipos de Exercícios</h3>
+
+        <p>A quarta regra envolve tipos de exercício. Aqui estão algumas categorias com exemplos:</p>
+
+        <table class="container-fluid table-bordered table-responsive w-50">
+
+            <thead class="bg-dark text-bg-dark">
+                <tr>
+                    <th>Imagem</th>
+
+                    <th>Dias por Semana</th>
+
+                    <th>Tipo de Treino Sugerido</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><img class="text-center img-fluid w-25" src="Imagens/dumbells.png" alt="Halteres"></td>
+
+                    <td>Funcional</td>
+
+                    <td>Exercícios que melhoram a funcionalidade do corpo, usando movimentos naturais.</td>
+                </tr>
+
+                <tr>
+                    <td><img class="text-center img-fluid w-25" src="Imagens/4760665.png" alt="Maquinas"></td>
+
+                    <td>Maquinário</td>
+
+                    <td>Exercícios feitos em máquinas, com foco em isolar grupos musculares.</td>
+                </tr>
+
+                <tr>
+                    <td><img class="text-center img-fluid w-25" src="Imagens/barr.png" alt="Barra"></td>
+
+                    <td>Peso Livre</td>
+
+                    <td>Exercícios com pesos livres, como halteres e barras, para trabalhar vários grupos musculares
+                        simultaneamente.</td>
+                </tr>
+
+                <tr>
+                    <td><img class="text-center img-fluid w-25" src="Imagens/cardio.png" alt="Cardio"></td>
+
+                    <td>Cardio</td>
+
+                    <td>Exercícios voltados para melhorar a resistência cardiovascular, como corrida ou ciclismo.</td>
+                </tr>
+
+                <tr>
+                    <td><img class="text-center img-fluid w-25" src="Imagens/hiit.png" alt="Hiit"></td>
+
+                    <td>HIIT</td>
+
+                    <td>Treinos intervalados de alta intensidade, ótimos para queima de gordura.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="bg-light mt-2 p-3 border-bottom border-black border-4" id="regras">
+        <h3 class="text-center">🛠️ Regras de negócio</h3>
+
+        <p>
+        <ol>
+            <li>Identifique seu biotipo corporal consultando a seção de biotipos.</li>
+            <li>Determine quantos dias por semana e horas por dia você pode treinar para seu treino se encaixar à sua
+                rotina.</li>
+            <li>Diga há quanto tempo você treina: se é Iniciante (0 a 6 meses de treino), Intermediário (6 meses a 2
+                anos de treino) ou Avançado (mais que 2 anos de treino), para que o personal IA possa adequar a
+                intensidade correta.</li>
+            <li>Selecione o seu objetivo para que o personal IA possa selecionar os melhores exercícios para você.</li>
+            <li>Diga se tem alguma lesão ou dor para que o personal IA crie um treino seguro e adequado.</li>
+            <li>Use o prompt do assistente para gerar um plano de treino personalizado.</li>
+        </ol>
+        </p>
+    </section>
+
+    <section class="bg-light mt-2 p-3 border-bottom border-black border-4" id="material">
+        <h3 class="text-center">📖 Material de Apoio</h3>
+
+        <p>
+            Aqui estão alguns recursos adicionais que podem ser úteis para entender melhor o projeto e as práticas de
+            prompt engineering:
+        <ul>
+            <li><a class="text-black"
+                    href="https://elidianaandrade.gitbook.io/fundamentos-de-engenharia-de-prompts-com-claude-3">Fundamentos
+                    de Engenharia de prompt</a></li>
+            <li><a class="text-black"
+                    href="https://aline-antunes.gitbook.io/otimize-seus-prompts-e-aprenda-mais-usando-ias-1">Boas
+                    práticas de prompt</a></li>
+        </ul>
+        </p>
+    </section>
+
+    <section class="bg-light mt-2 p-3 border-bottom border-black border-4" id="prompt">
+        <h3 class="text-center">🎯 Prompt de Resposta Proposto</h3>
+
+        <p>
+        <ul>
+            <li><a class="text-black"
+                    href="https://github.com/vitorVBD/personal-trainer-IA/blob/main/prompt/prompt-v1-md">Prompt</a></li>
+
+            <li class="list-unstyled">Exemplo de atribuição de variáveis:
+                <ul>
+                    <li>{{Biotipo}} = ectomorfo</li>
+                    <li>{{Periodização}} = 4 dias</li>
+                    <li>{{Disponibilidade}} = 1 hora e meia</li>
+                    <li>{{Objetivo}} = ganho de massa muscular</li>
+                    <li>{{Nível}} = intermediário</li>
+                    <li>{{Tipos de exercício}} <span class="text-muted">*opcional</span></li>
+                    <li>{{Lesões}} = lesão no joelho <span class="text-muted">*opcional</span></li>
+            </li>
+        </ul>
+        </ul>
+        </p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
